@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
 	
+	//This is webDriver
 	static public WebDriver dr;
 	
 	@BeforeClass
