@@ -4,13 +4,13 @@ import org.junit.Test;
 
 public class StringPractice {
 
-	String s = "hi how are you";
+	String s11 = "hi how are you";
 	
 	@Test
 	public void xp() {
-		System.out.println(s.length());
-		System.out.println(s.toLowerCase());
-		System.out.println(s.toUpperCase());
+		System.out.println(s11.length());
+		System.out.println(s11.toLowerCase());
+		System.out.println(s11.toUpperCase());
 	}
 	
 	StringBuffer s=new StringBuffer("how are you");
