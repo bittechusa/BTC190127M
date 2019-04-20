@@ -15,17 +15,17 @@ public class SmokeTest extends BaseTest{
 		hp = new HomePage(dr);
 		hp.verifyHomePageTitle();
 		hp.verifyHomePageUrl();
-		sp = hp.searchHomePage();
-		sp.verifyHomePageTitle();
-		sp.verifyHomePageUrl();
+		sp = hp.searchHomePage().get();
+//		sp.verifyHomePageTitle();
+//		sp.verifyHomePageUrl();
 		sp.verifyBooksatamazonImage();
 		
 	}
 	
-	@Test
-	public void amazonProductVerify() {
-		hp = new HomePage(dr);
-	}
+//	@Test
+//	public void amazonProductVerify() {
+//		hp = new HomePage(dr);
+//	}
 	
 /*
  * Test Scanario: Create a end to end scenario

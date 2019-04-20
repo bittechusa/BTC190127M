@@ -34,6 +34,9 @@ public class Shared {
 	public void myType(By by, String value) {
 		dr.findElement(by).sendKeys(value);
 	}
+	public void myType(WebElement ele, String value) {
+		ele.sendKeys(value);
+	}
 	
 	public void verifyattribute(By by, String attributeName) {
 		String w = dr.findElement(by).getAttribute(attributeName);
@@ -55,6 +58,11 @@ public class Shared {
 	
 	public void verifyElementDisplay(By by) {
 		boolean e = dr.findElement(by).isDisplayed();
+		System.out.println("Is Elemnt diplayed ? " + e);
+	}
+	
+	public void verifyElementDisplay(WebElement ele ) {
+		boolean e = ele.isDisplayed();
 		System.out.println("Is Elemnt diplayed ? " + e);
 	}
 	
