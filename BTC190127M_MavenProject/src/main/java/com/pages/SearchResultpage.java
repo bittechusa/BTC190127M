@@ -1,5 +1,7 @@
 package com.pages;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +18,7 @@ public class SearchResultpage extends LoadableComponent<SearchResultpage>{
 	Shared s;
 	//@FindBy(id="twotabsearchtextbox") WebElement theSearchTextBox;
 	@FindBy(xpath="//div[@id='top']//img[contains(@src,'CB282622384_.png')]") WebElement booksatamazonImage;
+	@FindBy(xpath=".//*[@id='content']/div/div/div/div[2]/div[2]/nav/ul/li/a") List<WebElement> mensPages;
 	public SearchResultpage(WebDriver dr){
 		this.dr = dr;
 		s = new Shared(dr);
@@ -40,6 +43,7 @@ public class SearchResultpage extends LoadableComponent<SearchResultpage>{
 		
 		dr.navigate().to("https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=book");
 		System.out.println("load");
+		Header h=new Header(dr);
 	}
 
 	@Override
@@ -48,6 +52,12 @@ public class SearchResultpage extends LoadableComponent<SearchResultpage>{
 		Assert.assertTrue(dr.getCurrentUrl().equals("https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=book"));
 		System.out.println("isload");
 		Header h=new Header(dr);
+	}
+	public void verifyMenPagination()
+	{
+		s.verifyPagination(mensPages);
+		s.verifyPagination(dr.findElement(By.xpath(".//*[@id='content']/div/div/div/div[2]/div[2]/nav/ul/li[9]/a")));
+		s.verifyPagination(dr.findElements(By.xpath("")), 3);
 	}
 	
 	

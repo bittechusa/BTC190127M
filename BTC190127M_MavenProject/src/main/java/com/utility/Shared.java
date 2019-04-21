@@ -1,5 +1,8 @@
 package com.utility;
 
+import java.util.List;
+
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -70,5 +73,56 @@ public class Shared {
 		int number = dr.findElements(by).size();
 		return number;
 	}
-
+	
+	public void verifyPagination(List<WebElement> elements)
+	{
+		for(WebElement element:elements)
+		{
+			
+			String previousUrl=dr.getCurrentUrl();
+			element.click();
+			String afterUrl=dr.getCurrentUrl();
+			Assert.assertFalse(previousUrl.equals(afterUrl));
+		}
+	}
+	
+	public void verifyPagination(List<WebElement> elements,int index)
+	{
+		for(int i=index;i<elements.size();i++)
+		{
+			
+			String previousUrl=dr.getCurrentUrl();
+			elements.get(i).click();
+			String afterUrl=dr.getCurrentUrl();
+			Assert.assertFalse(previousUrl.equals(afterUrl));
+		}
+	}
+	
+	
+	public void verifyPagination(WebElement elements)
+	{
+	
+		while(elements.isDisplayed())
+		{
+			String previousUrl=dr.getCurrentUrl();
+			elements.click();
+			String afterUrl=dr.getCurrentUrl();
+			Assert.assertFalse(previousUrl.equals(afterUrl));
+			
+			
+		}
+		
+	
+	
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
