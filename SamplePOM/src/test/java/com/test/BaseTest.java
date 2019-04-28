@@ -7,13 +7,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BaseTest 
 {
 	WebDriver driver;
-	@Before
-	public void openBrowser()
-	{
-		getDriver();
-	}
-	public HomePage getDriver() {
+	
+	public void getDriver() {
 		driver=new ChromeDriver();
+		
+	}
+	
+
+	public HomePage nevigateToURL() {
+		
 		driver.get("http://www.bankrate.com");
 		return new HomePage(driver);
 	}

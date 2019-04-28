@@ -1,5 +1,6 @@
 package com.test;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -29,6 +30,9 @@ public class HomePage
 	{
 		mortgageRateSubMenu.click();return new MortgageRatePage(driver);
 	}
-	
+	public RefiananceRatePage clickOnRefiananceRate()
+	{
+		driver.findElement(By.xpath("xpath of refianance")).click();return new RefiananceRatePage(driver);
+	}
 
 }
