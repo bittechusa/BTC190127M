@@ -1,0 +1,374 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "open browser",
+            "match": {
+              "location": "StepDefinatioFb.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "nevigate to URL",
+            "match": {
+              "location": "StepDefinatioFb.nevigate_to_URL()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "valid credential",
+        "description": "",
+        "id": "login-validation;valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user type userId and password",
+            "match": {
+              "location": "StepDefinatioFb.user_type_userId_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user click on login button",
+            "match": {
+              "location": "StepDefinatioFb.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user should see his profile page",
+            "match": {
+              "location": "StepDefinatioFb.user_should_see_his_profile_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "open browser",
+            "match": {
+              "location": "StepDefinatioFb.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "nevigate to URL",
+            "match": {
+              "location": "StepDefinatioFb.nevigate_to_URL()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "invalid credential",
+        "description": "",
+        "id": "login-validation;invalid-credential;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user type \"user1\" and \"1232\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user1",
+                  "offset": 11
+                },
+                {
+                  "val": "1232",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinatioFb.user_type_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on login button",
+            "match": {
+              "location": "StepDefinatioFb.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user should not see his profile page",
+            "match": {
+              "location": "StepDefinatioFb.user_should_not_see_his_profile_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@reg"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "open browser",
+            "match": {
+              "location": "StepDefinatioFb.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "nevigate to URL",
+            "match": {
+              "location": "StepDefinatioFb.nevigate_to_URL()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "invalid credential",
+        "description": "",
+        "id": "login-validation;invalid-credential;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user type \"user2\" and \"3524\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user2",
+                  "offset": 11
+                },
+                {
+                  "val": "3524",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinatioFb.user_type_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on login button",
+            "match": {
+              "location": "StepDefinatioFb.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user should not see his profile page",
+            "match": {
+              "location": "StepDefinatioFb.user_should_not_see_his_profile_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@reg"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "open browser",
+            "match": {
+              "location": "StepDefinatioFb.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "nevigate to URL",
+            "match": {
+              "location": "StepDefinatioFb.nevigate_to_URL()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "invalid credential",
+        "description": "",
+        "id": "login-validation;invalid-credential;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user type \"user3\" and \"5346\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user3",
+                  "offset": 11
+                },
+                {
+                  "val": "5346",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinatioFb.user_type_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on login button",
+            "match": {
+              "location": "StepDefinatioFb.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user should not see his profile page",
+            "match": {
+              "location": "StepDefinatioFb.user_should_not_see_his_profile_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@reg"
+          }
+        ]
+      }
+    ],
+    "name": "login Validation",
+    "description": "",
+    "id": "login-validation",
+    "keyword": "Feature",
+    "uri": "/Users/bittechconsulting/Desktop/BTC190127M/SamplePOM/loginfb.feature"
+  }
+]

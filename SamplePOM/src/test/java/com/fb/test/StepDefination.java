@@ -1,7 +1,14 @@
-package com.test;
+package com.fb.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.test.BaseTest;
+import com.test.CFBankPage;
+import com.test.HSBCPage;
+import com.test.HomePage;
+import com.test.MortgageRatePage;
+import com.test.RefiananceRatePage;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

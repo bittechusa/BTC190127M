@@ -1,16 +1,21 @@
 Feature: login Validation
 
-Scenario: valid credential
+Background:
 Given open browser
+|chrome|
+|firefox|
 And nevigate to URL
+@smoke
+Scenario: valid credential
+
 When user type userId and password
 And user click on login button
 Then user should see his profile page
 
 
+@reg
 Scenario Outline: invalid credential
-Given open browser
-And nevigate to URL
+
 When user type "<userId>" and "<password>"
 And user click on login button
 Then user should not see his profile page

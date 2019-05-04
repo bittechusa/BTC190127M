@@ -1,20 +1,57 @@
 package com.fb.test;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.test.BaseTest;
+
+import cucumber.api.DataTable;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class StepDefinatioFb {
 	WebDriver driver;
-	@Given("^open browser$")
-	public void open_browser() throws Throwable {
-	    driver=new ChromeDriver();
+	@Before
+	public void start()
+	{
+		System.out.println("start");
 	}
+	@After
+	public void end()
+	{
+		System.out.println("end");
+	}
+	
+	@Before("@smoke")
+	public void start1()
+	{
+		System.out.println("start1");
+	}
+	@After("@smoke")
+	public void end1()
+	{
+		System.out.println("end1");
+	}
+	@Given("^open browser$")
+	public void open_browser(DataTable arg1) throws Throwable {
+	    List<List<String>> browsers=arg1.raw();
+	    String browser=browsers.get(1).get(0);
+	    BaseTest.getBrowserOption(browser);
+	}
+	
+	
+	
+//	@Given("^open browser$")
+//	public void open_browser() throws Throwable {
+//	    driver=new ChromeDriver();
+//	}
 
 	@Given("^nevigate to URL$")
 	public void nevigate_to_URL() throws Throwable {

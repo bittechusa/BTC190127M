@@ -1,5 +1,6 @@
 Feature: EndToEnd Scenario
 
+@smoke
 Scenario: validate mortgage rate for HSBC
 
 Given Open browser
@@ -9,7 +10,7 @@ And User click on Mortgage rate
 And User click on next HSBC Button
 Then User should be able to see HSBC Bank Rate Page
 
-
+@Reg
 Scenario: validate Refianace rate for CFBank
 
 Given Open browser
