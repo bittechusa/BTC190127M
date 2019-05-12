@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="hello" parallel="tests">
+<listeners>
+
+<listener class-name="com.bit.dr.BaseListner">
+
+</listener>
+</listeners>
+
+
+<test name="smokeTest">
+<classes>
+<class name="com.bit.test.ParallelExecution">
+<methods>
+<include name=""></include>
+</methods>
+</class>
+
+<class name="com.bit.test.UnitTest">
+<methods>
+<include name=""></include>
+</methods>
+</class>
+
+</classes>
+</test>
+
+<!-- 
+<test name="Integration">
+<classes>
+
+
+<class name="com.bit.test.UnitTest"></class>
+
+</classes>
+</test> -->
+</suite>

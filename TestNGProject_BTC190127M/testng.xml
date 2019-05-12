@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="hello">
+<listeners>
+
+<listener class-name="com.bit.dr.BaseListner">
+
+</listener>
+</listeners>
+
+
+<test name="jaichatai1">
+<classes>
+<class name="com.bit.test.SomeTest"></class>
+<class name="com.bit.test.IntegrationTest">
+
+</class>
+</classes>
+</test>
+</suite>

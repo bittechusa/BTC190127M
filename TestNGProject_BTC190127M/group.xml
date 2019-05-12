@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="whatever">
+	<test name="jaichatai">
+	<groups>
+	
+	<run>
+	<include name="smoke"></include>
+	</run>
+	
+	
+	</groups>
+		<!-- <classes>
+			<class name="com.bit.test.SomeTest"></class>
+			<class name="com.bit.test.RegressionTest">
+				
+			</class>
+		</classes> -->
+		<packages>
+		<package name="com.bit.test"></package>
+		</packages>
+	</test>
+
+
+</suite>
