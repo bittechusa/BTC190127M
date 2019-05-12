@@ -2,8 +2,9 @@ Feature: login Validation
 
 Background:
 Given open browser
-|chrome|
-|firefox|
+|chrome|ie|
+|firefox||safar\\\\\\\\\\\\
+
 And nevigate to URL
 @smoke
 Scenario: valid credential
