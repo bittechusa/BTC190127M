@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite1]">
+  <listeners>
+    <listener class-name="com.bit.dr.BaseListner"/>
+  </listeners>
+  <test thread-count="5" name="smoke(failed)">
+    <classes>
+      <class name="com.bit.test.IntegrationTest">
+        <methods>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- com.bit.test.IntegrationTest -->
+    </classes>
+  </test> <!-- smoke(failed) -->
+</suite> <!-- Failed suite [suite1] -->
