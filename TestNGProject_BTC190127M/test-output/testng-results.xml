@@ -1,69 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="hello" duration-ms="10404" started-at="2019-05-12T18:12:43Z" finished-at="2019-05-12T18:12:53Z">
+  <suite name="Default suite" duration-ms="94" started-at="2019-05-22T20:55:06Z" finished-at="2019-05-22T20:55:06Z">
     <groups>
     </groups>
-    <test name="jaichatai1" duration-ms="10404" started-at="2019-05-12T18:12:43Z" finished-at="2019-05-12T18:12:53Z">
-      <class name="com.bit.test.ParamTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.bit.test.ParamTest@7cd62f43]" name="beforeSuite" is-config="true" duration-ms="9" started-at="2019-05-12T18:12:43Z" finished-at="2019-05-12T18:12:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.bit.test.ParamTest@7cd62f43]" name="beforeTest" is-config="true" duration-ms="1" started-at="2019-05-12T18:12:43Z" finished-at="2019-05-12T18:12:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.bit.test.ParamTest@7cd62f43]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-05-12T18:12:43Z" finished-at="2019-05-12T18:12:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.bit.test.ParamTest@7cd62f43]" name="beforeMethod" is-config="true" duration-ms="3054" started-at="2019-05-12T18:12:43Z" finished-at="2019-05-12T18:12:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.bit.test.ParamTest@7cd62f43]" name="test3" duration-ms="5" started-at="2019-05-12T18:12:46Z" finished-at="2019-05-12T18:12:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bit.test.ParamTest@7cd62f43]" name="afterMethod" is-config="true" duration-ms="131" started-at="2019-05-12T18:12:46Z" finished-at="2019-05-12T18:12:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test3 status=SUCCESS method=ParamTest.test3()[pri:0, instance:com.bit.test.ParamTest@7cd62f43] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bit.test.ParamTest@7cd62f43]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-05-12T18:12:46Z" finished-at="2019-05-12T18:12:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bit.test.ParamTest@7cd62f43]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-05-12T18:12:53Z" finished-at="2019-05-12T18:12:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.bit.test.ParamTest@7cd62f43]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-05-12T18:12:54Z" finished-at="2019-05-12T18:12:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.bit.test.ParamTest -->
-      <class name="com.bit.test.UnitTest">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.bit.test.UnitTest@6d4b1c02]" name="test1" duration-ms="7196" started-at="2019-05-12T18:12:46Z" finished-at="2019-05-12T18:12:53Z">
+    <test name="Default test" duration-ms="94" started-at="2019-05-22T20:55:06Z" finished-at="2019-05-22T20:55:06Z">
+      <class name="com.bit.test.LogTest">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.bit.test.LogTest@59fa1d9b]" name="test1" duration-ms="75" started-at="2019-05-22T20:55:06Z" finished-at="2019-05-22T20:55:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-      </class> <!-- com.bit.test.UnitTest -->
-    </test> <!-- jaichatai1 -->
-  </suite> <!-- hello -->
+      </class> <!-- com.bit.test.LogTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

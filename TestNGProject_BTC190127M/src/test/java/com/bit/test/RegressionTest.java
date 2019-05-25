@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 
 public class RegressionTest {
 	
+	
+
 	@Test(description="this is testing method",groups="smoke")
 	  public void f1() {
 		 System.out.println("test2");

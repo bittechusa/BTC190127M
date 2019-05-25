@@ -1,0 +1,8 @@
+2019-05-22 16:54:07,897 FATAL [LogTest] fatal 
+2019-05-22 16:54:07,899 ERROR [LogTest] error 
+2019-05-22 16:54:07,899 WARN  [LogTest] warn 
+2019-05-22 16:54:07,899 INFO  [LogTest] info 
+2019-05-22 16:55:06,339 FATAL [LogTest] fatal 
+2019-05-22 16:55:06,341 ERROR [LogTest] error 
+2019-05-22 16:55:06,342 WARN  [LogTest] warn 
+2019-05-22 16:55:06,342 INFO  [LogTest] info 
