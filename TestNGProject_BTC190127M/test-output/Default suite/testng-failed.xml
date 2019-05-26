@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bit.test.IntegrationTest">
+      <class name="com.bit.dr.ReadData">
         <methods>
-          <include name="loginValidation" invocation-numbers="0 1"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- com.bit.test.IntegrationTest -->
+      </class> <!-- com.bit.dr.ReadData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
