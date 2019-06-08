@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bit.dr.ReadData">
+      <class name="com.bit.test.GridPractice">
         <methods>
+          <include name="test1"/>
+          <include name="test2"/>
           <include name="test3"/>
+          <include name="openBrow"/>
+          <include name="configureFile"/>
         </methods>
-      </class> <!-- com.bit.dr.ReadData -->
+      </class> <!-- com.bit.test.GridPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

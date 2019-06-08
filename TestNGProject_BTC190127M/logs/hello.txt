@@ -1,0 +1,12 @@
+2019-06-08 14:02:50 INFO  GridPractice:31 - initializing browser
+2019-06-08 14:02:51 INFO  GridPractice:36 - opened browser
+2019-06-08 14:02:51 INFO  GridPractice:56 - start test case
+2019-06-08 14:02:53 INFO  GridPractice:59 - nevigate to url
+2019-06-08 14:02:53 INFO  GridPractice:60 - finish test case
+2019-06-08 14:02:53 INFO  GridPractice:31 - initializing browser
+2019-06-08 14:02:54 INFO  GridPractice:36 - opened browser
+2019-06-08 14:02:54 INFO  GridPractice:31 - initializing browser
+2019-06-08 14:02:55 INFO  GridPractice:36 - opened browser
+2019-06-08 14:02:55 INFO  GridPractice:41 - start test case
+2019-06-08 14:03:01 ERROR GridPractice:48 - false
+2019-06-08 14:03:01 INFO  GridPractice:50 - finish  test case

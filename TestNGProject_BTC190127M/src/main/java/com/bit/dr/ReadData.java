@@ -84,7 +84,7 @@ public class ReadData
 	public void test3(Object u,Object p)
 	{
 		readTXT("/Users/bittechconsulting/eclipse-workspace/new/TestNGProject_BTC190127M/file1.txt");
-		readTXT("\"/Users/bittechconsulting/eclipse-workspace/new/TestNGProject_BTC190127M/file1.txt\"")
+		readTXT("\"/Users/bittechconsulting/eclipse-workspace/new/TestNGProject_BTC190127M/file1.txt\"");
 		System.out.println(u+"+"+p);
 		dr.findElement(By.xpath("")).sendKeys(u.toString());
 	}
